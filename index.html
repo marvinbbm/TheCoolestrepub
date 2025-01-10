@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wave</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="The Wave Logo" class="logo">
+        </div>
+        <h1>The Wave</h1>
+        <p>Fashion. Culture. Drip.</p>
+        <div class="header-controls">
+            <a href="sign-in.html" class="button">Sign In</a>
+            <a href="create-account.html" class="button">Create Account</a>
+            <div class="cart-icon">
+                <a href="cart.html"><img src="cart-icon.png" alt="Cart"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#videos">Videos</a>
+        <a href="#forex">Forex Academy</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to The Wave</h2>
+        <p>Your ultimate destination for fashion and financial empowerment.</p>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Shop Our Collection</h2>
+        <div class="products">
+            <div class="product">
+                <img src="hoodie.jpg" alt="Wave Hoodie">
+                <h3>Wave Hoodie</h3>
+                <p>$50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="shorts.jpg" alt="Wave Shorts">
+                <h3>Wave Shorts</h3>
+                <p>$30</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <p><a href="more-clothing.html">View More Clothing Items</a></p>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos">
+        <h2>Fashion in Motion</h2>
+        <p>Experience our latest fashion through curated videos:</p>
+        <div class="video-gallery">
+            <video controls>
+                <source src="fashion1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="fashion2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="fashion3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p><a href="videos.html">View More Videos</a></p>
+    </section>
+
+    <!-- Forex Academy Section -->
+    <section id="forex">
+        <h2>Mandeem Trades Academy</h2>
+        <p>Learn from the best in the business. Join our Forex Academy and master trading under the mentorship of Merveile Bomolo.</p>
+        <img src="mentor.jpg" alt="Merveile Bomolo" class="mentor-photo">
+        <div class="forex-video">
+            <h3>Watch Our Introduction Video:</h3>
+            <video controls>
+                <source src="forex-introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <ul>
+            <li>Comprehensive forex courses for beginners and advanced traders.</li>
+            <li>Live trading sessions and market analysis.</li>
+            <li>Join our WhatsApp group for updates and networking: <a href="https://chat.whatsapp.com/IVd2kfCsQ0LHvRey2rrzJ2" target="_blank">Mandeem Trades</a>.</li>
+            <li>Email us for inquiries: <a href="mailto:merveilebomodo17@gmail.com">merveilebomodo17@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <!-- Support Chat Section -->
+    <div class="support-chat">
+        <button aria-label="Open live chat" class="chat-button" id="chat-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 18" fill="#ffffff">
+                <path d="M10.627 9.013l6.872 6.873.708.707-1.415 1.414-.707-.707-6.872-6.872L2.34 17.3l-.707.707L.22 16.593l.707-.707L7.8 9.013.946 2.161l-.707-.708L1.653.04l.707.707L9.213 7.6 16.066.746l.707-.707 1.414 1.414-.707.708-6.853 6.852z"></path>
+            </svg>
+        </button>
+        <div class="chat-popup" id="chat-popup">
+            <h3>Live Support</h3>
+            <p>Find your answer quickly:</p>
+            <input type="text" placeholder="Search for answers..." class="search-input">
+            <p>If you can't find what you're looking for, create a support ticket:</p>
+            <button>Create Ticket</button>
+            <button class="close-chat" id="close-chat">Close</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Follow us on social media:</p>
+        <div class="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2025 The Wave. All rights reserved.</p>
+            <p><strong>The Coolest Republic</strong></p>
+            <p><a href="#partner" class="link">Interested in Partnerships?</a></p>
+            <p><a href="#careers" class="link">Looking for Career Opportunities?</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const chatButton = document.getElementById('chat-button');
+        const chatPopup = document.getElementById('chat-popup');
+        const closeChat = document.getElementById('close-chat');
+
+        chatButton.addEventListener('click', () => {
+            chatPopup.classList.toggle('show');
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatPopup.classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>
